@@ -1,0 +1,80 @@
+2021-12-23 03:56:25.795  INFO 1 --- [main] c.a.o.s.SiteServicesApplication          : Starting SiteServicesApplication v0.0.1-SNAPSHOT using Java 1.8.0_212 on 87f0d4aaf226 with PID 1 (/opt/app/app.jar started by root in /)
+2021-12-23 03:56:25.832  INFO 1 --- [main] c.a.o.s.SiteServicesApplication          : No active profile set, falling back to default profiles: default
+2021-12-23 03:56:30.530  INFO 1 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2021-12-23 03:56:30.609  INFO 1 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-12-23 03:56:30.611  INFO 1 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-23 03:56:30.833  INFO 1 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-12-23 03:56:30.836  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4715 ms
+2021-12-23 03:56:32.785  INFO 1 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-23 03:56:32.837  INFO 1 --- [main] c.a.o.s.SiteServicesApplication          : Started SiteServicesApplication in 9.324 seconds (JVM running for 12.557)
+2021-12-23 03:56:35.089  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 03:56:35.098  INFO 1 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-12-23 03:56:35.106  INFO 1 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2021-12-23 03:56:35.282  INFO 1 --- [http-nio-8080-exec-1] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:55.209  INFO 1 --- [http-nio-8080-exec-4] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:55.445  INFO 1 --- [http-nio-8080-exec-5] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:55.647  INFO 1 --- [http-nio-8080-exec-6] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:55.811  INFO 1 --- [http-nio-8080-exec-7] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:55.960  INFO 1 --- [http-nio-8080-exec-8] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:56.099  INFO 1 --- [http-nio-8080-exec-9] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:56.265  INFO 1 --- [http-nio-8080-exec-10] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:56.406  INFO 1 --- [http-nio-8080-exec-1] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:56.562  INFO 1 --- [http-nio-8080-exec-3] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 03:57:56.700  INFO 1 --- [http-nio-8080-exec-2] c.a.o.s.SiteController                   : getSite() Called
+2021-12-23 16:39:22.733  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Starting VPNServiceApp v0.0.1-SNAPSHOT using Java 1.8.0_212 on 3ef9819084a6 with PID 1 (/opt/app/app.jar started by root in /)
+2021-12-23 16:39:22.809 DEBUG 1 --- [main] c.a.o.s.VPNServiceApp                    : Running with Spring Boot v2.5.8, Spring v5.3.14
+2021-12-23 16:39:22.814  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : The following profiles are active: dev
+2021-12-23 16:39:27.846  INFO 1 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-12-23 16:39:27.849  INFO 1 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-23 16:39:28.044  INFO 1 --- [main] o.a.c.c.C.[.[.[/vpn-services]            : Initializing Spring embedded WebApplicationContext
+2021-12-23 16:39:28.773  INFO 1 --- [main] o.m.d.cluster                            : Cluster created with settings {hosts=[lps-mongo:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-12-23 16:39:30.051  INFO 1 --- [cluster-ClusterId{value='61c4a640c933f4751ed73d76', description='null'}-lps-mongo:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server lps-mongo:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.2.3.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.2.3.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) [mongodb-driver-core-4.2.3.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) [mongodb-driver-core-4.2.3.jar!/:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:1.8.0_212]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_212]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_212]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_212]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_212]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_212]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.2.3.jar!/:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.2.3.jar!/:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.2.3.jar!/:?]
+	... 4 more
+
+2021-12-23 16:39:31.431  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Started VPNServiceApp in 11.017 seconds (JVM running for 13.916)
+2021-12-23 16:39:31.595  INFO 1 --- [main] o.m.d.cluster                            : Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-12-23 16:40:16.452  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Starting VPNServiceApp v0.0.1-SNAPSHOT using Java 1.8.0_212 on ad8aa5532e1b with PID 1 (/opt/app/app.jar started by root in /)
+2021-12-23 16:40:16.532 DEBUG 1 --- [main] c.a.o.s.VPNServiceApp                    : Running with Spring Boot v2.5.8, Spring v5.3.14
+2021-12-23 16:40:16.542  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : The following profiles are active: dev
+2021-12-23 16:40:20.954  INFO 1 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-12-23 16:40:20.958  INFO 1 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-23 16:40:21.170  INFO 1 --- [main] o.a.c.c.C.[.[.[/vpn-services]            : Initializing Spring embedded WebApplicationContext
+2021-12-23 16:40:21.825  INFO 1 --- [main] o.m.d.cluster                            : Cluster created with settings {hosts=[lps-mongo:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-12-23 16:40:22.180  INFO 1 --- [cluster-ClusterId{value='61c4a675b0cc54790de451f1', description='null'}-lps-mongo:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:2}] to lps-mongo:27017
+2021-12-23 16:40:22.207  INFO 1 --- [cluster-ClusterId{value='61c4a675b0cc54790de451f1', description='null'}-lps-mongo:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=lps-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=158729000}
+2021-12-23 16:40:22.179  INFO 1 --- [cluster-rtt-ClusterId{value='61c4a675b0cc54790de451f1', description='null'}-lps-mongo:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:1}] to lps-mongo:27017
+2021-12-23 16:40:24.547  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Started VPNServiceApp in 10.514 seconds (JVM running for 13.309)
+2021-12-23 16:40:24.749  INFO 1 --- [main] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:3}] to lps-mongo:27017
+2021-12-23 16:40:32.648  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/vpn-services]            : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 16:40:42.203  INFO 1 --- [SpringApplicationShutdownHook] o.m.d.connection                         : Closed connection [connectionId{localValue:3, serverValue:3}] to lps-mongo:27017 because the pool has been closed.
+2021-12-23 16:41:51.510  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Starting VPNServiceApp v0.0.1-SNAPSHOT using Java 1.8.0_212 on 46fa3dc495b6 with PID 1 (/opt/app/app.jar started by root in /)
+2021-12-23 16:41:51.569 DEBUG 1 --- [main] c.a.o.s.VPNServiceApp                    : Running with Spring Boot v2.5.8, Spring v5.3.14
+2021-12-23 16:41:51.591  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : The following profiles are active: dev
+2021-12-23 16:41:58.398  INFO 1 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-12-23 16:41:58.402  INFO 1 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2021-12-23 16:41:58.658  INFO 1 --- [main] o.a.c.c.C.[.[.[/vpn-services]            : Initializing Spring embedded WebApplicationContext
+2021-12-23 16:41:59.533  INFO 1 --- [main] o.m.d.cluster                            : Cluster created with settings {hosts=[lps-mongo:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-12-23 16:42:00.081  INFO 1 --- [cluster-rtt-ClusterId{value='61c4a6d7e95681239d7bbb62', description='null'}-lps-mongo:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:1}] to lps-mongo:27017
+2021-12-23 16:42:00.092  INFO 1 --- [cluster-ClusterId{value='61c4a6d7e95681239d7bbb62', description='null'}-lps-mongo:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:2}] to lps-mongo:27017
+2021-12-23 16:42:00.121  INFO 1 --- [cluster-ClusterId{value='61c4a6d7e95681239d7bbb62', description='null'}-lps-mongo:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=lps-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=216028400}
+2021-12-23 16:42:03.199  INFO 1 --- [main] c.a.o.s.VPNServiceApp                    : Started VPNServiceApp in 14.095 seconds (JVM running for 17.598)
+2021-12-23 16:42:03.653  INFO 1 --- [main] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:3}] to lps-mongo:27017
+2021-12-23 16:42:05.206  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/vpn-services]            : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 17:58:34.787  INFO 1 --- [SpringApplicationShutdownHook] o.m.d.connection                         : Closed connection [connectionId{localValue:3, serverValue:3}] to lps-mongo:27017 because the pool has been closed.

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VPNServiceApp<vpn-services>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.anudina.org.siteservices.VPNServiceApp",
+            "projectName": "vpn-services",
+            "args": ""
+        }
+    ]
+}

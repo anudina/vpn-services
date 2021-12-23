@@ -1,0 +1,27 @@
+version: '1'
+services:
+  myapp:
+    image: anudinaorg/vpn-services:latest
+    container_name: vpn-services
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - lps-network
+    volumes:
+      - ./logs:/opt/app/logs
+    environment:
+    - ENV=dev
+    depends_on:
+      - lps-mongo
+      
+  lps-mongo: 
+    container_name: lps-mongo
+    image: mongo:latest
+    networks:
+      - lps-network
+networks:
+  lps-network: 
+    driver: bridge

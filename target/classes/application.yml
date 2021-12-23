@@ -1,0 +1,45 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.anudina: DEBUG
+server:
+  port: 8080
+  servlet:
+    context-path: /vpn-services
+  
+spring:
+  profiles:
+    active: local
+  main:
+    banner-mode: off
+
+---
+spring:
+  profiles: local
+  data:
+      mongodb:
+        uri: mongodb://localhost:27017/db
+thread-pool: 10
+logging:
+  path: /tmp/logs/
+  file:
+    name: /tmp/logs/site-services.log
+server:
+  email: anudina.org@gmail.com
+---
+spring:
+  profiles: dev
+  data:
+      mongodb:
+        uri: mongodb://lps-mongo:27017/db
+thread-pool: 10
+logging:
+  path: /opt/app/logs/
+  file:
+    name: /opt/app/logs/site-services.log
+server:
+  email: anudina.org@gmail.com
+  main:
+    banner-mode: off
+---
+        
